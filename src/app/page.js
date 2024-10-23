@@ -2,20 +2,26 @@
 
 import { useEffect } from 'react';
 import Image from 'next/image';
+import { Inter } from 'next/font/google'
+
+
+const inter = Inter({
+  subsets: ['latin'],
+  variable: '--font-inter',
+})
+
 
 export default function Home() {
   useEffect(() => {
-    // Prevent scrolling when the page is loaded
     document.body.classList.add('overflow-hidden');
 
-    // Cleanup the effect when component unmounts
     return () => {
       document.body.classList.remove('overflow-hidden');
     };
   }, []);
 
   return (
-    <div className="relative w-full h-screen bg-gray-900">
+    <div className="relative w-full h-screen bg-gray-900 {`${inter.variable} font-sans`}">
       {/* Background Image */}
       <Image
         src="/theather.jpg"
@@ -25,13 +31,9 @@ export default function Home() {
         priority
         className="absolute inset-0 z-0"
       />
-
-      {/* Dark Overlay */}
       <div className="absolute inset-0 bg-black bg-opacity-50 z-10"></div>
 
-      {/* Main Content */}
       <main className="relative z-20 flex flex-col justify-center items-center h-full text-center">
-        {/* HOME Text with Multiple Transition Effects */}
         <div className="relative flex space-x-2">
           <span className="text-6xl md:text-8xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-orange-400 via-pink-500 to-blue-500 drop-shadow-lg mb-6 animate-rotateIn">
             H
@@ -51,7 +53,6 @@ export default function Home() {
           A journey of the soul, where roots run deep and the heart always returns.
         </p>
 
-        {/* Call to Action Buttons */}
         <div className="flex gap-4 flex-col sm:flex-row items-center">
           <a className="text-white border-2 border-white px-6 py-3 rounded-lg font-semibold text-lg shadow-lg transition-all duration-300 hover:border-green-400"
             href="/about">

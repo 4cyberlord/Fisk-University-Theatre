@@ -7,9 +7,7 @@ export default function Footer() {
   return (
     <footer className="bg-gray-900 text-white py-8">
       <div className="container mx-auto px-6 lg:px-8">
-        {/* Grid layout that changes based on screen size */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {/* Column 1: Play Title and Director */}
           <div className="text-center lg:text-left">
             <h2 className="text-2xl font-bold mb-2">Home</h2>
             <p className="text-gray-400">Directed by Persephone Felder Fentress</p>
