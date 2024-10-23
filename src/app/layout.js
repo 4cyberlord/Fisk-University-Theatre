@@ -1,13 +1,11 @@
 import localFont from "next/font/local";
 import "./globals.css";
 import NavBar from "@/components/NavBar";
-import { Roboto } from 'next/font/google'
+import { Inter } from 'next/font/google'
  
-const roboto = Roboto({
-  weight: ['500', '900'],
-  style: ['normal', 'italic'],
+const inter = Inter({
   subsets: ['latin'],
-  display: 'swap',
+  variable: '--font-inter',
 })
 
 
@@ -30,7 +28,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={roboto.className}>
+    <html lang="en" className={`${inter.variable} font-sans`}>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
