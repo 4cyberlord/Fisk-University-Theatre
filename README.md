@@ -6,5 +6,5 @@
 - [X] Contact Us Page  
 - [ ] Poster Page  
 - [ ] Join Us Page  
-- [ ] Footer Page
+- [X] Footer Page
 - [ ] Black and White Theme Comparability Mode
