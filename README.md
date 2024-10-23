@@ -7,3 +7,4 @@
 - [ ] Poster Page  
 - [ ] Join Us Page  
 - [ ] Footer Page
+- [ ] Black and White Theme Comparability Mode
