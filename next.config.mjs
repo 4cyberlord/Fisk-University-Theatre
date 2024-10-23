@@ -19,6 +19,13 @@ const nextConfig = {
           'avatars.githubusercontent.com',
           'media.licdn.com'
         ],
+        remotePatterns: [
+          {
+            protocol: 'https',
+            hostname: 'drive.proton.me',
+            pathname: '/urls/**',
+          },
+        ],
       },
 };
 

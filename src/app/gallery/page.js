@@ -58,8 +58,8 @@ const Gallery = () => {
   };
 
   return (
-    <div className="container mx-auto p-4">
-      <header className="mb-8 text-center">
+    <div className="container mx-auto p-4 mt-10">
+      <header className="mb-8 text-center mt-10">
         <h1 className="text-4xl font-bold">Gallery</h1>
         <p className="mt-2 text-lg text-gray-600">
           A collection of random images displayed in a Masonry Grid layout.
