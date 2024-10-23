@@ -54,7 +54,7 @@ export default function AboutPage() {
               className="rounded-full mx-auto mb-4"
             />
             <h3 className="text-xl font-semibold">Charles Adu Boakye</h3>
-            <p className="text-gray-600">Software Developer</p>
+            <p className="text-gray-600">Senior Software Developer</p>
           </div>
           {/* Team Member 2 */}
           <div className="text-center">
