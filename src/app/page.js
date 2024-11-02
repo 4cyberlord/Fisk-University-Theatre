@@ -21,7 +21,7 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="relative w-full h-screen bg-gray-900 {`${inter.variable} font-sans`}">
+    <div className="relative w-full h-screen bg-gray-900">
       {/* Background Image */}
       <Image
         src="/theather.jpg"

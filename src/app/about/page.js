@@ -7,8 +7,8 @@ export default function AboutPage() {
     <div className="container mx-auto px-4 py-12 mt-10">
       {/* Hero Section */}
       <section className="text-center mb-16">
-        <h1 className="text-5xl font-bold mb-4">About Us</h1>
-        <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+        <h1 className="text-5xl font-bold mb-4 text-white">About Us</h1>
+        <p className="text-lg text-gray-400 max-w-2xl mx-auto">
             Welcome to our theater! We are dedicated to bringing captivating performances to life, 
             creating unforgettable experiences for our audiences. From timeless classics to contemporary masterpieces, 
             our passion lies in the art of storytelling through the magic of live theater.
@@ -30,11 +30,11 @@ export default function AboutPage() {
 
         {/* Text */}
         <div className="w-full md:w-1/2">
-        <h2 className="text-4xl font-bold mb-4">Who We Are</h2>
-            <p className="text-lg text-gray-600 mb-4">
+        <h2 className="text-4xl font-bold mb-4 text-white">Who We Are</h2>
+            <p className="text-lg text-gray-400 mb-4">
                 At the heart of our theater lies a deep passion for the performing arts. We are a collective of creative minds directors, actors, designers, and storytellers united by our commitment to bringing powerful narratives to life on stage.
             </p>
-            <p className="text-lg text-gray-600">
+            <p className="text-lg text-gray-400">
                 Our productions span a wide array of genres, from classic dramas and musicals to experimental performances, all designed to inspire and entertain. Our mission is to create an inclusive space where audiences and performers alike can experience the transformative power of live theater.
             </p>
         </div>
@@ -42,7 +42,7 @@ export default function AboutPage() {
 
       {/* Team Section */}
       <section className="mb-16">
-        <h2 className="text-4xl font-bold text-center mb-8">Meet Our Team</h2>
+        <h2 className="text-4xl font-bold text-center mb-8 text-white">Meet Our Team</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Team Member 1 */}
           <div className="text-center">
@@ -53,8 +53,8 @@ export default function AboutPage() {
               alt="Team Member 1"
               className="rounded-full mx-auto mb-4"
             />
-            <h3 className="text-xl font-semibold">Charles Adu Boakye</h3>
-            <p className="text-gray-600">Senior Software Developer</p>
+            <h3 className="text-xl font-semibold text-white">Charles Adu Boakye</h3>
+            <p className="text-gray-400 text-sm">Senior Software Developer</p>
           </div>
           {/* Team Member 2 */}
           <div className="text-center">
@@ -65,8 +65,8 @@ export default function AboutPage() {
               alt="Team Member 2"
               className="rounded-full mx-auto mb-4"
             />
-            <h3 className="text-xl font-semibold">Ayesha Imam</h3>
-            <p className="text-gray-600">Project Supporter</p>
+            <h3 className="text-xl font-semibold text-white">Ayesha Imam</h3>
+            <p className="text-gray-600 text-sm">Project Supporter</p>
           </div>
           {/* Team Member 3 */}
           <div className="text-center">
@@ -77,8 +77,8 @@ export default function AboutPage() {
               alt="Team Member 3"
               className="rounded-full mx-auto mb-4"
             />
-            <h3 className="text-xl font-semibold">Mark Johnson</h3>
-            <p className="text-gray-600">CTO</p>
+            <h3 className="text-xl font-semibold text-white">Mark Johnson</h3>
+            <p className="text-gray-400 text-sm">CTO</p>
           </div>
         </div>
       </section>
