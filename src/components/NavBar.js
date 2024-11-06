@@ -12,7 +12,6 @@ const inter = Inter({
 export default function NavBar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  // Close menu when clicking outside
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (isMenuOpen && !event.target.closest('nav')) {
@@ -24,7 +23,6 @@ export default function NavBar() {
     return () => document.removeEventListener('click', handleClickOutside);
   }, [isMenuOpen]);
 
-  // Close menu when route changes
   const handleLinkClick = () => {
     setIsMenuOpen(false);
   };
@@ -68,7 +66,7 @@ export default function NavBar() {
             </svg>
           </button>
 
-          {/* Desktop Navigation Links */}
+          {/* Desktop Navigation Links - Removed Join Us and Contact Us */}
           <ul className="hidden lg:flex space-x-6 items-center">
             <li>
               <Link href="/gallery" className="text-gray-900 dark:text-white hover:text-gray-400 dark:hover:text-gray-400 transition duration-300">
@@ -85,22 +83,10 @@ export default function NavBar() {
                 Poster
               </Link>
             </li>
-            <li>
-              <Link href="/contact" className="text-gray-900 dark:text-white hover:text-gray-400 dark:hover:text-gray-400 transition duration-300">
-                Contact Us
-              </Link>
-            </li>
-            <li>
-              <Link href="/join">
-                <span className="bg-blue-500 hover:bg-blue-600 text-white py-2 px-8 rounded-full transition duration-300">
-                  Join Us
-                </span>
-              </Link>
-            </li>
           </ul>
         </div>
 
-        {/* Mobile Menu */}
+        {/* Mobile Menu - Removed Join Us and Contact Us */}
         <div 
           className={`lg:hidden absolute left-0 right-0 bg-white dark:bg-black shadow-lg transition-all duration-300 ease-in-out ${
             isMenuOpen 
@@ -138,22 +124,6 @@ export default function NavBar() {
                 onClick={handleLinkClick}
               >
                 Poster
-              </Link>
-            </li>
-            <li>
-              <Link 
-                href="/contact" 
-                className="block text-gray-900 dark:text-white hover:text-gray-400 dark:hover:text-gray-400 transition duration-300"
-                onClick={handleLinkClick}
-              >
-                Contact Us
-              </Link>
-            </li>
-            <li>
-              <Link href="/join" onClick={handleLinkClick}>
-                <span className="block bg-blue-500 hover:bg-blue-600 text-white py-2 px-8 rounded-full transition duration-300 text-center">
-                  Join Us
-                </span>
               </Link>
             </li>
           </ul>
